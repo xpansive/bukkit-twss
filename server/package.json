@@ -1,0 +1,9 @@
+{
+  "name": "bukkit-twss",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "2.5.6",
+    "twss": "0.1.5"
+  }
+}
+
