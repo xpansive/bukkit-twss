@@ -1,0 +1,7 @@
+server: bukkit-twss.herokuapp.com
+message: $light_purpleThats what she said!
+threshold: 0.99
+
+algorithm: nbc
+numNeighbours: 3
+numWordsInNgram: 1
