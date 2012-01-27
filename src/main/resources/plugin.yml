@@ -3,7 +3,7 @@ database: false
 description: Replies with "That's what she said!" when someone says an appropriate
   sentence in chat. Uses DanielRapp's twss.js for classification.
 generator: http://dinnerbone.com/minecraft/tools/pluginator/
-main: com.xpansive.bukkit.plugins.twss.ThatsWhatSheSaid
+main: com.xpansive.bukkit.twss.ThatsWhatSheSaid
 name: ThatsWhatSheSaid
 startup: postworld
 version: '1.0'
