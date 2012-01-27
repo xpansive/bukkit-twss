@@ -1,4 +1,4 @@
-package com.xpansive.bukkit.plugins.twss;
+package com.xpansive.bukkit.twss;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;

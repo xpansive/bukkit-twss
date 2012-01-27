@@ -1,4 +1,4 @@
-package com.xpansive.bukkit.plugins.twss;
+package com.xpansive.bukkit.twss;
 
 import org.bukkit.configuration.file.FileConfiguration;
 

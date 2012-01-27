@@ -1,4 +1,4 @@
-package com.xpansive.bukkit.plugins.twss;
+package com.xpansive.bukkit.twss;
 
 import java.io.IOException;
 import java.io.InputStream;
