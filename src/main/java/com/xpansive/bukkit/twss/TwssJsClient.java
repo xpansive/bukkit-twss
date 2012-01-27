@@ -3,6 +3,7 @@ package com.xpansive.bukkit.twss;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -28,7 +29,12 @@ public class TwssJsClient {
         try {
             URL url = new URL(getUrl("is", text));
 
-            InputStream stream = url.openStream();
+            HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+            if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
+                throw new IOException(connection.getResponseMessage());
+            }
+
+            InputStream stream = connection.getInputStream();
             byte[] buffer = new byte[32];
             StringBuilder sb = new StringBuilder();
             int bytesRead;
